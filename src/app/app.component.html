@@ -1,0 +1,29 @@
+<div style="text-align: center;">
+  <h1>Student Result</h1>
+</div>
+
+<table border="1">
+        
+  <tr>
+      <th >sr.no</th>
+      <th >name</th>
+      <th >maths</th> 
+      <th >science</th>
+      <th >english</th>
+      <th >result</th>    
+  </tr>
+  
+ <tr *ngFor="let sd of studentdata; let i=index">
+    <td >{{i+1}}</td>
+    <td>{{sd.name}}</td>
+    <td>{{sd.maths}}</td>
+    <td>{{sd.science}}</td>
+    <td>{{sd.english}}</td>
+    <td>{{sd.result1}}</td>
+  </tr>
+ 
+</table><br>
+
+<!--<button (click)="myresult()"> result</button><br>
+-->
+<router-outlet></router-outlet>
